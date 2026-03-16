@@ -441,7 +441,7 @@ export default function App() {
             <div
               className="grid w-full h-full gap-0 border border-slate-300 bg-slate-300"
               style={{
-                gridTemplateColumns: `repeat(${BOARD_SIZE}, 1fr)`
+                gridTemplateColumns: `repeat(${BOARD_SIZE}, minmax(0, 1fr))`
               }}
             >
               {board.map((row, rowIndex) => (
