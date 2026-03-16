@@ -462,7 +462,7 @@ export default function App() {
                       {cell === 'X' && (
                         <X
                           className={cn(
-                            "w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-blue-600 transition-transform",
+                            "w-full h-full p-[18%] text-blue-600 transition-transform",
                             isWinning && "animate-bounce scale-110 drop-shadow-md"
                           )}
                           strokeWidth={isWinning ? 3 : 2.5}
@@ -471,7 +471,7 @@ export default function App() {
                       {cell === 'O' && (
                         <Circle
                           className={cn(
-                            "w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7 text-red-500 transition-transform",
+                            "w-full h-full p-[20%] text-red-500 transition-transform",
                             isWinning && "animate-bounce scale-110 drop-shadow-md"
                           )}
                           strokeWidth={isWinning ? 3.5 : 3}
