@@ -52,7 +52,7 @@ export default function App() {
 
   useEffect(() => {
     // Generate random avatar on load
-    setPlayerAvatar(`https://api.dicebear.com/7.x/bottts/svg?seed=${Math.random().toString(36).substring(7)}`);
+    setPlayerAvatar(`https://api.dicebear.com/9.x/bottts/svg?seed=${Math.random().toString(36).substring(7)}`);
 
     const newSocket = io();
     setSocket(newSocket);
@@ -210,7 +210,7 @@ export default function App() {
                       <img src={playerAvatar} alt="Avatar" className="w-14 h-14 rounded-full bg-slate-100 border-2 border-slate-200" />
                       <button
                         type="button"
-                        onClick={() => setPlayerAvatar(`https://api.dicebear.com/7.x/bottts/svg?seed=${Math.random().toString(36).substring(7)}`)}
+                        onClick={() => setPlayerAvatar(`https://api.dicebear.com/9.x/bottts/svg?seed=${Math.random().toString(36).substring(7)}`)}
                         className="absolute inset-0 flex items-center justify-center bg-black/40 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
                         title="Đổi avatar"
                       >
